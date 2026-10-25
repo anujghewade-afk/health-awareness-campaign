@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#168a68">
+
+    <title>Health Awareness Campaign</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+    <header>
+        <h1>💚 Health Awareness</h1>
+        <p>Healthy People, Happy Life!</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Welcome to Our Campaign!</h2>
+
+            <p>
+                Your health is your greatest wealth.
+                Learn simple ways to stay healthy,
+                active, and happy.
+            </p>
+
+            <button onclick="showMessage()">
+                Start Learning
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+
+<section class="topics">
+
+    <h2>Explore Health Topics</h2>
+
+    
+<div class="card">
+
+    <img
+        src="images/healthy-food.jpg"
+        alt="Healthy food, fruits, and vegetables"
+        class="health-image"
+    >
+
+    <h3>🥗 Healthy Food and Nutrition</h3>
+
+    <p>
+        Eat a balanced diet with fruits, vegetables,
+        pulses, and other nutritious foods.
+    </p>
+
+    <button onclick="showTopic('food')">
+        Learn More
+    </button>
+
+</div>
+
+
+
+    <div class="card">
+        <img
+    src="images/exercise.jpg"
+    alt="People exercising outdoors"
+    class="health-image"
+>
+        <h3>🏃 Exercise and Fitness</h3>
+
+        <p>
+            Learn how regular physical activity
+            supports your health.
+        </p>
+
+        <button onclick="showTopic('exercise')">
+            Learn More
+        </button>
+    </div>
+
+    <div class="card">
+        <img
+    src="images/hygiene.jpg"
+    alt="Hands being washed with soap"
+    class="health-image"
+>
+        <h3>🧼 Personal Hygiene</h3>
+
+        <p>
+            Learn about handwashing, cleanliness,
+            and healthy hygiene habits.
+        </p>
+
+        <button onclick="showTopic('hygiene')">
+            Learn More
+        </button>
+    </div>
+
+    <div class="card">
+        <img
+    src="images/water.jpg"
+    alt="A person drinking water"
+    class="health-image"
+>
+        <h3>💧 Drinking Water</h3>
+
+        <p>
+            Discover why drinking enough water
+            is important for your body.
+        </p>
+
+        <button onclick="showTopic('water')">
+            Learn More
+        </button>
+    </div>
+
+    <div class="card">
+        <img
+    src="images/mental-health.jpg"
+    alt="A person practising meditation"
+    class="health-image"
+>
+        <h3>🧠 Mental Health</h3>
+
+        <p>
+            Learn about emotional well-being,
+            relaxation, and stress management.
+        </p>
+
+        <button onclick="showTopic('mental')">
+            Learn More
+        </button>
+    </div>
+
+    <div class="card">
+        <h3>🩺 Disease Prevention</h3>
+
+        <p>
+            Learn about healthy habits that can
+            help reduce the risk of illness.
+        </p>
+
+        <button onclick="showTopic('disease')">
+            Learn More
+        </button>
+    </div>
+
+</section>
+
+<section class="information" id="topicInformation">
+
+    <h2 id="topicTitle">Health Information</h2>
+
+    <p id="topicDescription">
+        Select a topic above to learn more.
+    </p>
+
+</section>
+```
+
+
+        <section class="campaign">
+            <h2>📢 Join Our Health Campaign</h2>
+
+            <p>
+                Small healthy habits can make
+                a big difference in our lives.
+            </p>
+
+            <button onclick="joinCampaign()">
+                Join Campaign
+            </button>
+
+            <p id="campaignMessage"></p>
+        </section>
+
+    </main>
+
+<section class="daily-tips">
+
+    <h2>💚 Daily Health Tips</h2>
+
+    <p>
+        Small healthy habits can make a big difference!
+    </p>
+
+    <div class="tip-box">
+        <h3>Today's Health Tip</h3>
+
+        <p id="dailyTip">
+            Click the button to discover a health tip.
+        </p>
+
+        <button onclick="showHealthTip()">
+            Show Health Tip
+        </button>
+    </div>
+
+</section>
+
+
+<footer>
+      
+  <section class="quiz">
+
+    <h2>📝 Health Awareness Quiz</h2>
+
+    <p>Test your health knowledge!</p>
+
+     <form id="healthQuiz">
+
+        <div class="question">
+            <p>1. Which habit helps prevent the spread of many infections?</p>
+
+            <label>
+                <input type="radio" name="q1" value="a">
+                Never washing your hands
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="b">
+                Washing your hands with soap
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="c">
+                Skipping meals
+            </label>
+        </div>
+
+        <div class="question">
+            <p>2. Which is an example of physical activity?</p>
+
+            <label>
+                <input type="radio" name="q2" value="a">
+                Walking
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="b">
+                Sitting all day
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="c">
+                Avoiding movement
+            </label>
+        </div>
+
+        <div class="question">
+            <p>3. What is a healthy way to manage stress?</p>
+
+            <label>
+                <input type="radio" name="q3" value="a">
+                Never talking to anyone
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="b">
+                Ignoring every problem
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="c">
+                Talking to someone you trust
+            </label>
+        </div>
+
+        <button type="submit">Check My Score</button>
+
+      </form>
+
+    <p id="quizResult" aria-live="polite"></p>
+
+  </section>
+
+
+        <p>
+            Health Awareness Campaign App
+        </p>
+
+        <p>
+            Learn Today, Live Healthier Tomorrow!
+        </p>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,317 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f5;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #168a68;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    margin-top: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.welcome {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+h2 {
+    color: #168a68;
+}
+
+button {
+    background-color: #168a68;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #106b51;
+}
+
+.topics {
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    margin: 15px 0;
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 5px solid #168a68;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #168a68;
+}
+
+.campaign {
+    background-color: #d9f5e9;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #145b49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#message,
+#campaignMessage {
+    font-weight: bold;
+    color: #168a68;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .welcome,
+    .campaign {
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.information {
+    background-color: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    border-left: 5px solid #168a68;
+    box-shadow: 0 3px 10px #00000010;
+    scroll-margin-top: 20px;
+}
+
+.information h2 {
+    color: #168a68;
+}
+
+.information p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.card button {
+    margin-top: 8px;
+}
+
+.card button:focus,
+button:focus-visible {
+    outline: 3px solid #f2b84b;
+    outline-offset: 3px;
+}
+
+.quiz {
+    background-color: white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.question {
+    background-color: #f0f8f5;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.question label {
+    display: block;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.question input {
+    margin-right: 8px;
+}
+
+#quizResult {
+    font-weight: bold;
+    color: #168a68;
+    margin-top: 20px;
+}
+
+/* Health topic cards */
+
+
+.health-image {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 12px;
+    background-color: #f0f8f5;
+}
+
+
+
+.card {
+    background-color: white;
+    padding: 18px;
+    margin: 18px 0;
+    border-radius: 15px;
+    border-left: 5px solid #168a68;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+/* Mobile phone layout */
+
+@media (max-width: 600px) {
+
+    .health-image {
+        height: 170px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+}
+
+.daily-tips {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #e4f7ec;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.tip-box {
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.tip-box h3 {
+    color: #168a68;
+}
+
+#dailyTip {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 18px 0;
+}
+
+/* Health Awareness Quiz */
+.quiz {
+    background-color: #ffffff;
+    color: #24352b;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 800px;
+    border: 2px solid #b7ddc5;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.quiz h2 {
+    color: #176b45;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.quiz h3 {
+    color: #234c36;
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+.quiz p,
+.quiz label {
+    color: #26382d;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.quiz label {
+    display: block;
+    background: #f0f8f2;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.quiz input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #218653;
+    transform: scale(1.15);
+}
+
+.quiz button {
+    background-color: #218653;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.quiz button:hover {
+    background-color: #176b45;
+}
+
+#quizResult {
+    font-size: 20px;
+    font-weight: bold;
+    color: #176b45;
+    margin-top: 20px;
+}
+
+
+
+
+
+
